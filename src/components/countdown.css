@@ -1,0 +1,130 @@
+/* Countdown container styles */
+.countdown-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #ffe4e1; /* Light red/pinkish background */
+  color: #d32f2f; /* Red text color */
+  min-height: 100vh;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Background hearts */
+.background-hearts {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1; /* Place behind content */
+  pointer-events: none;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.heart {
+  width: 50px;
+  height: 50px;
+  background-color: #ff5c8e; /* Pinkish red heart color */
+  clip-path: polygon(50% 0%, 100% 38%, 83% 100%, 50% 75%, 17% 100%, 0 38%);
+  position: absolute;
+  animation: floatUp 3s infinite ease-in-out;
+}
+
+.heart:nth-child(1) {
+  animation-delay: 0s;
+  top: 10%;
+  left: 20%;
+}
+
+.heart:nth-child(2) {
+  animation-delay: 1s;
+  top: 30%;
+  left: 50%;
+}
+
+.heart:nth-child(3) {
+  animation-delay: 2s;
+  top: 50%;
+  left: 70%;
+}
+
+.heart:nth-child(4) {
+  animation-delay: 0.5s;
+  top: 60%;
+  left: 10%;
+}
+
+.heart:nth-child(5) {
+  animation-delay: 1.5s;
+  top: 80%;
+  left: 30%;
+}
+
+/* Countdown and other styles */
+.countdown-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #d32f2f; /* Darker red for title */
+  margin-bottom: 20px;
+}
+
+.countdown-digits {
+  display: flex;
+  gap: 15px;
+}
+
+.countdown-box {
+  background: #ffcccc; /* Soft light red for countdown boxes */
+  border-radius: 10px;
+  padding: 15px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.countdown-value {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #d32f2f; /* Red for countdown values */
+}
+
+.countdown-label {
+  font-size: 1rem;
+  color: #d32f2f; /* Red label color */
+}
+
+.quote-container {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #000000;
+}
+
+/* Floating hearts animation */
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-150px) scale(1.5);
+    opacity: 0;
+  }
+}
+
+/* Fade-in effect for photo gallery */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
