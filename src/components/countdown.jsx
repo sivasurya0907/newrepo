@@ -56,7 +56,7 @@ const Countdown = () => {
       <div className="countdown-container">
         <h1 className="countdown-title">Countdown to Your Special Day❤!</h1>
        <br>
-       </br> <h2>01.01.2024</h2>
+       </br> <h2>01.01.2025</h2>
 
         <div className="quote-container">
           <p className="quote">{randomQuote}</p>
