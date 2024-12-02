@@ -11,7 +11,7 @@ const quotes = [
   "You’re the reason I smile every day.",
   "The best thing to hold onto in life is each other.",
   "Every love story is beautiful, but ours is my favorite.",
-  "You are my today and all of my tomorrows."
+  "You are my today and all of my tomorrows.",
 ];
 
 const Countdown = () => {
@@ -55,13 +55,10 @@ const Countdown = () => {
     <>
       <div className="countdown-container">
         <h1 className="countdown-title">Countdown to Your Special Day❤!</h1>
-       <br>
-       </br> <h2>01.01.2025</h2>
-
+        <br></br> <h2>01.01.2025</h2>
         <div className="quote-container">
           <p className="quote">{randomQuote}</p>
         </div>
-
         <div className="countdown-digits">
           <div className="countdown-box">
             <span className="countdown-value">{timeLeft.days}</span>
@@ -80,7 +77,6 @@ const Countdown = () => {
             <span className="countdown-label">Seconds</span>
           </div>
         </div>
-
         {/* Floating hearts */}
         <div className="heart-container">
           <div className="heart"></div>
@@ -89,9 +85,8 @@ const Countdown = () => {
           <div className="heart"></div>
           <div className="heart"></div>
         </div>
-<br></br>
+        <br></br>
         {/* Audio Player */}
-      
       </div>
     </>
   );
